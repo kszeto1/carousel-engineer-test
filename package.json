@@ -1,0 +1,37 @@
+{
+  "name": "carousel-engineer-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "build": "webpack --mode production --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kszeto1/carousel-engineer-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kszeto1/carousel-engineer-test/issues"
+  },
+  "homepage": "https://github.com/kszeto1/carousel-engineer-test#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-paginate": "^6.3.0",
+    "react-responsive-carousel": "^3.1.50"
+  }
+}
