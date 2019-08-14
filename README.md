@@ -1,37 +1,9 @@
-## Welcome to GitHub Pages
+## Carousel Engineering Test - Thought Process
 
-You can use the [editor on GitHub](https://github.com/kszeto1/carousel-engineer-test/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+For this simple coding challenge, I tackled Part 1 using a npm package. I knew this would save time and allow me to quickly implement a carousel that met the challenge specifications. With react-responsive-carousel, I created Carousel components in React to implement the carousel. Then I toggled settings for infiniteLoop and autoPlay. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Initially, my thought process for the images was to host them on s3. This proves useful for public access to my images but in hindsight it's not entirely necessary for this project. In order to improve image rendering speeds, I set up the images locally in a repository and referenced the images with relative paths. After testing, I concluded slow rendering of images was due to hardware limitations of my 2016 12-inch macbook (images loaded quickly on my desktop machine).
 
-### Markdown
+For part 2, given that frameworks/libraries are prohibited, I assumed HTML/CSS and vanilla Javascript was the ideal approach. Also, jQuery would prove useful. My approach was to focus on simplicity and avoid overly complicating building a slider. To switch to the next or previous slide, I used jQuery's next and prev methods to find the next or previous image element. Once that was found, I change the next/previous element's class to active and remove the active class from the image previously centered in the carousel. Active elements are visible inline while image elements that aren't active are hidden. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kszeto1/carousel-engineer-test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Lastly for part 3, this was my first time deploying a project to GitHub Pages. Following the documentation tutorial, I found that my project wasn't immediately available at kszeto1.github.io. I had to navigate to kszeto1.github.io/public to where my index.html file was located. To optimize and reduce this extra step, I refactored my project structure and moved index.html to the root folder. 
